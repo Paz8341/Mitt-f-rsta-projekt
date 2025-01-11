@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Språk till dokument -->
+<head>
+  <!-- Grundläggande sidinställningar -->
+  <meta charset="UTF-8"> <!-- Teckenkodning för att stödja specialtecken -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiv design för mobila enheter -->
+  <meta name="description" content="Utforska allt om Harry Potter, inklusive böcker, filmer och evenemang!"> <!-- Beskrivning för sökmotorer -->
+  <meta name="keywords" content="Harry Potter, Böcker, Filmer, Evenemang, Magi"> <!-- Nyckelord för SEO -->
+  <meta name="author" content="Min Magiska Blogg"> <!-- Blogg namn -->
+  <title>Min Magiska Blogg</title> <!-- Titel om plats -->
+
+  <!-- Länk till Bootstrap-biblioteket för definierade stilar -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Länk till Google Fonts för att använda Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Länk till Font Awesome för att använda ikoner -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- CSS-stilar -->
+  <style>
+    /* Anger standardfonten för hela sidan */
+    body {
+      font-family: 'Roboto', sans-serif; /* Standardfont */
+    } 
+
+    header {
+      background: linear-gradient(45deg, #28a745, #218838); /* Grön gradient för headerns bakgrund */
+      color: #fff; /* Vit textfärg */
+      background-image: url('https://i.postimg.cc/Z5TDPrf2/42e2b0f2-1728-4023-af21-e131175dc9e9.webp');/* Bildbakgrund för header */
+      background-size: cover;/* Bilden täcker hela utrymmet */
+      background-position: center;/* Bilden centreras */
+      background-repeat: no-repeat;/* Förhindrar att bilden upprepas */
+      height: 400px;/* Höjden på headern */
+    }
+/* Stil för paragrafer i headersektionen */
+    header p {
+      font-size: 1.5rem;/* Textstorlek */
+      font-weight: bold;/* Fetstilad text */
+      margin-top: 20px;/* Marginal ovanför texten */
+    }
+/* Stil för navigationsfältet */
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/* Lägger till en skugga under navigationsfältet */
+    }
+/* Stil för länkar i navigationsfältet */
+    .nav-link {
+      transition: color 0.3s; /* Lägger till en övergångseffekt för färgändring */
+    }
+ /* Stil för bilder med klassen "custom-img" */
+   .custom-img {
+      max-height: 300px;/* Maximal höjd för bilden */
+      object-fit: cover;/* Bildens proportioner och fyller i området */
+      border-radius: 8px;/* Rundar hörnen på bilden */
+    }
+/* Stil för rubriker h2 och h3 */
+    h2, h3 {
+      color: #343a40;/* Mörkgrå textfärg */
+    }
+/* Stil för sidfoten (footer) */
+    footer {
+      background-color: #343a40;/* Mörkgrå bakgrundsfärg */
+      color: #fff;/* Vit textfärg */
+      padding: 20px 0;/* Utrymme ovanför och under innehållet */
+    }
+ /* Stil för länkar i sidfoten */
+    footer a {
+      color: #17a2b8;/* Blå färg för länkar */
+      text-decoration: none;/* Ingen understrykning */
+    }
+ /* När muspekaren svävar över en länk i sidfoten */
+    footer a:hover {
+      text-decoration: underline;/* Understrykning vid hovring */
+    }
+/* Stil för bilder i header */
+    header img {
+      position: absolute;/* Absolut positionering */
+      top: 20px;/* Avstånd från toppen */
+      left: 20px;/* Avstånd från vänster */
+      max-width: 100px;/* Maximal bredd för bilden */
+      border: 3px solid #fff;/* Vit kantlinje runt bilden */
+      z-index: 2;/* Gör så att bilden ligger ovanför andra element */
+      border-radius: 50%;/* Gör bilden cirkulär */
+    }
+  </style>
+</head>
+<body>
+  <!-- Headersektionen med rubrik, bild och text -->
+  <header class="text-center text-white d-flex align-items-center justify-content-center">
+    <!-- Logotypen visas som en cirkulär bild -->
+    <img 
+         src="https://i.postimg.cc/15q6hG9F/ac0a3bcd-c3e4-48bd-8d5a-d69305e8a318.webp" 
+         alt="Logotyp Min Magiska Blogg" 
+         class="rounded-circle shadow-lg">
+    <!--Attribut för<img>: 
+          -src: Anger URL till bilden som ska visas.
+          -alt: Alternativ text som visas om bilden inte ladas och till personer med olika disfunktion.
+          -class: Tillämpade CSS-klasser. "Rounded-circle" gör bilden cirkulär, och "shadow-lg" lägger till en stor skugga. -->
+    
+    <!-- Behållare för rubrik och text -->
+    <div class="container" style="z-index: 2;">
+      <!-- Huvudrubrik-->
+      <h1 class="display-4 fw-bold">Välkommen till Harry Potters värld</h1>
+      <!-- Atribut för <h1>: 
+           - Texten mellan taggarna är rubriken som visas på sidan.
+           - "class": Css från Bootstrap-stilar. "display-4" ger stor text och "fw-bold" gör den fet.-->
+      
+      <!-- Undertext som beskriver sidan -->
+      <p class="fs-5">Upptäck allt om magiska böcker, filmer och evenemang.</p>
+      <!-- Atribut för <p>: 
+           - Texten mellan taggarna är en kort beskrivning om blogg.
+           - "class": "fs-5" anger fontstorlek (Bootstrap-klasser)-->
+      
+      <!-- En knapp som länkar till en extern sida -->
+      <a 
+         href="https://www.10fakta.se/harry-potter/" 
+         class="btn btn-warning btn-lg">
+        Utforska mer
+      </a>
+      <!-- Atribut för <a>: 
+           - "href": Länkens destination. Här leder den till en extern webbsida.
+           - "class": CSS-klasser. "btn" gör det till en knapp, "btn-warning" ger gul färg och "btn-lg" gör knappen stor. -->
+    </div>
+  </header>
+</body>
+
+  <!-- Huvudwebbplatsnavigering -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Det finns "ETT FEL" som om den ändras skulle ändra status och färg på sidan, det är därför den förblir som den är.-->
+    <!--Navigationsfältet skapat med bootstrap-->
+    <div class="container"><!--Behållare som centrerar innehåll och organiserar layouten med automatiska marginaler. -->
+      <a class="navbar-brand">
+        <i class="fa-solid fa-hat-wizard"></i> Magisk Meny
+      </a><!-- <i>: Etikett för en Font Awesome-ikon. En trollhatsikon visas här. -->
+        <!-- Knapp för att komprimera navigeringsfältet på små skärmar -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><!-- Skapar en knapp som visas när navigeringsfältet är komprimerat.-->
+        <span class="navbar-toggler-icon"></span><!--Menyikonen med tre rader som visas på skärmen -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav"><!--Navigeringsfältets innehåll-->
+        <ul class="navbar-nav ms-auto"><!--Lista över navigeringsobjekt. Använd Bootstrap-navigeringsstilar och justera listobjekt till höger.-->
+         <!--första punkten på listan (böcker)-->
+            <li class="nav-item"><!--Element i listan-->
+            <a class="nav-link active" href="https://www.bokus.com/barn-tonar/harry-potter">Böcker</a><!--extern link med info om böcker-->
+          </li>
+          <!--Samma sak till Filmer och Events-->
+          <li class="nav-item">
+            <a class="nav-link" href="https://harrypotter.fandom.com/sv/wiki/Harry_Potter_(filmer)">Filmer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.london-tickets.co.uk/warner-bros-studio-tour-london/" title="Information om Harry Potter-evenemang och rundturer">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Huvudinnehåll -->
+  <main class="container my-5"><!--definierar huvudinnehållet på sidan-->
+    <div class="row"><!--organiserar innehåll i rader-->
+      <!-- Sidopanel -->
+      <aside class="col-lg-4 mb-4"> <!--sekundärt sidofältsinnehåll-->
+        <h2>Visste du det?...</h2><!--rubrik-->
+        <img src="https://i.postimg.cc/rFKjdRqy/4-C2-A8886-3-D28-4-E7-A-A889-18379-E5-C495-E.png" 
+             alt="Författare skriver en bok" 
+             class="img-fluid mb-3 custom-img"><!--uRL post image bild skapat av AI-->
+        <p>Den brittiska författaren är Joanne Rowling, men sedan hon började skriva sagan tog hon pseudonymen J.K. Rowling, eftersom förlaget fruktade att läsarna inte skulle läsa ungdomsberättelsen eftersom den var skriven av en kvinna.</p>
+      </aside><!--tex som describer bild ock ge information till användare-->
+
+      <!-- Huvudsektion -->
+      <section class="col-lg-8">
+        <!-- Rubrik -->
+        <h2>Vill du uppleva en oförglömlig upplevelse?</h2>
+        <img src="https://i.postimg.cc/d0pZvj3C/diagon.webp" 
+             alt="Diagongränden skapat av AI som visas en bild från en magisk gata" 
+             class="img-fluid mb-3 custom-img"><!--bild skapat av AI som visas Diagongränden. Alt: Beskriver kort om bild-->
+        <p><strong>Diagongränden</strong></p><!--Titel skrivit i fetstil-->
+        <p>Denna ikoniska gränd, en av de mest betydelsefulla platserna i Harry Potters universum, är en magisk marknadsplats fylld med charmiga butiker och en atmosfär av mystik. Här kan trollkarlar och häxor köpa allt från trollstavar till trolldrycksingredienser, och miljön är en perfekt kombination av magi och äventyr.</p><!--text med info-->
+<!--samma på båda sektioner-->
+        <h2 class="mt-5">Magin är tillbaka på tv!</h2>
+        <img src="https://i.postimg.cc/d0ytRPQ7/lucha-de-magos.webp" 
+             alt="Trollkarlskamp" 
+             class="img-fluid custom-img mb-3">
+        <h5><strong>Tv-serier från Dec 2025</strong></h5>
+        <p>Från och med december i år kommer vi att kunna njuta av en serie som ger liv åt berättelserna från Harry Potter-böckerna.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Sidfot -->
+  <footer class="text-center">
+    <p>&copy; 2025 Magiska Blogg. Alla rättigheter förbehållna.</p><!-- Copyright-text som visar ägaren och år -->
+    <!-- Länkar för att öppna modala fönster (kontakt och integritetspolicy) -->
+     <p>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Kontakta oss</a> | <!--(länk) modal för att öppnakontakformuläret-->
+      <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Integritetspolicy</a><!--(länk) modal för att öppna integrietetspolicyn-->
+    </p>
+  </footer>
+
+  <!-- Modal för "Kontakta oss" -->
+   <!-- Definition av en modal som visas när man klickar på en knapp eller länk -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <!-- Modalens behållare -->
+    <div class="modal-dialog">
+      <!-- Modalens huvudinnehåll -->
+      <div class="modal-content">
+      <!-- Modalens rubrik -->
+        <div class="modal-header">
+         <!-- Modalens titel -->
+          <h5 class="modal-title" id="contactModalLabel">Kontakta oss</h5>
+          <!-- Knapp för att stänga modal -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modalens innehåll -->
+        <div class="modal-body">
+          <!--Kontakt information-->
+          <p><strong>E-mail:</strong> info@magiskablogg.way</p>
+          <p><strong>Telefon:</strong> +46 987 654 321</p>
+          <p><strong>Adress:</strong> Gatan 12, 123 45 Stockholm</p>
+        </div>
+        <!--modalens nederdel-->
+        <div class="modal-footer">
+          <!--knapp för stänga modal-->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal för "Integritetspolicy" -->
+<!-- Definition av en modal som visas när man klickar på en knapp eller länk -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <!-- Modalens behållare -->
+  <div class="modal-dialog">
+    <!-- Modalens huvudinnehåll -->
+    <div class="modal-content">
+      <!-- Modalens rubrik -->
+      <div class="modal-header">
+        <!-- Modalens titel -->
+        <h5 class="modal-title" id="privacyModalLabel">Integritetspolicy</h5>
+        <!-- Knapp för att stänga modal -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modalens innehåll -->
+      <div class="modal-body">
+        <!-- Titel för innehållet -->
+        <p><strong>Välkommen till vår integritetspolicy</strong></p>
+        <!-- Introduktion av integritetspolicy -->
+        <p>Vi värnar om din integritet och säkerställer att dina personuppgifter behandlas säkert och ansvarsfullt.</p>
+        <!-- Vad som samlas in -->
+        <p><strong>Vad samlar vi in?</strong></p>
+        <p>Vi kan samla in information som ditt namn, e-postadress och IP-adress för att förbättra din upplevelse på vår webbplats.</p>
+        <!-- Hur information används -->
+        <p><strong>Hur använder vi informationen?</strong></p>
+        <p>Den insamlade informationen används endast för de ändamål som anges, såsom att förbättra våra tjänster eller kontakta dig vid behov.</p>
+        <!-- Kontaktuppgifter -->
+        <p><strong>Kontakta oss</strong></p>
+        <p>Om du har frågor om vår integritetspolicy kan du kontakta oss på <a href="mailto:info@magiskablogg.way">info@magiskablogg.way</a>.</p>
+      </div>
+      <!-- Modalens nederdel -->
+      <div class="modal-footer">
+        <!-- Knapp för att stänga modal -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JavaScript -->
+ <!-- Websäkerhet och SSL-certifikat -->
+<!--
+## Websäkerhet och SSL-certifikat
+För att säkerställa säkerheten för data i transit rekommenderas det att använda ett SSL-certifikat på webbplatsen. Nedan beskrivs stegen för att konfigurera ett SSL-certifikat:
+
+1. **Skaffa ett SSL-certifikat:** Skaffa ett SSL-certifikat från en betrodd certifikatsutfärdare (CA).
+2. **Generera en CSR:** Skapa en certifikatssigneringsförfrågan (CSR) på servern.
+3. **Installera certifikatet:** Installera certifikatet på webbservern (t.ex. Nginx eller Apache).
+4. **Konfigurera omdirigering från HTTP till HTTPS:** Säkerställ att all HTTP-trafik omdirigeras till HTTPS.
+
+Även om dessa steg inte har implementerats i projektet har deras betydelse och relevans för webbsäkerhet beaktats.
+-->
+
+<!-- Laddar Bootstrap JavaScript för att hantera modalens funktionalitet -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
